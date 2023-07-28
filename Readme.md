@@ -1,4 +1,5 @@
-﻿# ItemsRepeaterOddDataTemplateBehaviorTest [Avalonia Version `11.0.1`]
+﻿# ItemsRepeaterOddDataTemplateBehaviorTest 
+[Avalonia Version `11.0.1`]
 
 This repository demonstrates an issue with an `InvalidCastException` that occurs when using the `View` directly inside the `ItemRepeaterElement-Item-/Data-Template`, rather than viewing the ViewModel using a `ContentControl`.
 
