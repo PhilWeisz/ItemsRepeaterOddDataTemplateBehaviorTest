@@ -1,0 +1,1 @@
+﻿This repo shows an InvalidCastException when not using the ContentControl inside the ItemRepeaterElement-Item-/Data-Template but the View instead
