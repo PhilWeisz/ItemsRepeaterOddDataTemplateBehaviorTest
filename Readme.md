@@ -2,9 +2,13 @@
 
 This repository demonstrates an issue with an `InvalidCastException` that occurs when using the `View` directly inside the `ItemRepeaterElement-Item-/Data-Template`, rather than the `ContentControl`.
 
-![InvalidCastException](ExampleImage/InvalidCastException.png)
+![InvalidCastException](ExampleImages/InvalidCastException.png)
 
 The image above showcases the exception occuring - but the Project builds and runs nevertheless.
+
+![Code](ExampleImages/Code.png)
+
+Above an example that shows which syntax works without Exception and which doesn't.
 
 ## To replicate
 

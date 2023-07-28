@@ -20,8 +20,8 @@
       </ItemsRepeater.Layout>
       <ItemsRepeater.ItemTemplate>
         <DataTemplate x:DataType="vm:RepeaterElementViewModel">
-          <!--<ContentControl x:Name="ContentControl" Content="{Binding}" />-->  <!-- this works   -->
-          <views:RepeaterElementView DataContext="{Binding}"/>                   <!-- this doesn't -->
+          <!--<ContentControl x:Name="ContentControl" Content="{Binding}" />--><!-- works w/o Exception-->
+          <views:RepeaterElementView DataContext="{Binding}"/>                 <!-- doesn't -->
         </DataTemplate>
       </ItemsRepeater.ItemTemplate>
     </ItemsRepeater>
