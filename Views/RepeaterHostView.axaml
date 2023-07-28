@@ -1,0 +1,30 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:ItemsRepeaterOddDataTemplateBehaviorTest.ViewModels"
+             xmlns:views="clr-namespace:ItemsRepeaterOddDataTemplateBehaviorTest.Views"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             Background="Aquamarine"
+             x:Class="ItemsRepeaterOddDataTemplateBehaviorTest.Views.RepeaterHostView"
+             x:DataType="vm:RepeaterHostViewModel">
+
+  <UserControl.DataContext>
+    <vm:RepeaterHostViewModel/>
+  </UserControl.DataContext>
+  
+  <ScrollViewer>
+    <ItemsRepeater ItemsSource="{Binding Items}">
+      <ItemsRepeater.Layout>
+        <UniformGridLayout ItemsStretch="None" MinRowSpacing="10" MinColumnSpacing="10" Orientation="Horizontal"  ItemsJustification="Start" MaximumRowsOrColumns="{Binding ColumnCount}" />
+      </ItemsRepeater.Layout>
+      <ItemsRepeater.ItemTemplate>
+        <DataTemplate x:DataType="vm:RepeaterElementViewModel">
+          <!--<ContentControl x:Name="ContentControl" Content="{Binding}" />-->  <!-- this works   -->
+          <views:RepeaterElementView DataContext="{Binding}"/>                   <!-- this doesn't -->
+        </DataTemplate>
+      </ItemsRepeater.ItemTemplate>
+    </ItemsRepeater>
+  </ScrollViewer>
+
+</UserControl>
