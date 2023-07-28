@@ -1,4 +1,5 @@
-﻿// // IRepeaterHostElementViewModel.cs 28:07:28
+﻿// // IRepeaterHostElementViewModel
+// 28:07:28
 
 using System;
 
