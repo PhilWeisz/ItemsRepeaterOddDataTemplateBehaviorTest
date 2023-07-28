@@ -4,13 +4,13 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:views="clr-namespace:ItemsRepeaterOddDataTemplateBehaviorTest.Views"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="300"
         x:Class="ItemsRepeaterOddDataTemplateBehaviorTest.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
         Title="ItemsRepeaterOddDataTemplateBehaviorTest"
-        Width="500" 
-        Height="500">
+        Width="400" 
+        Height="400">
 
     <Design.DataContext>
       <vm:MainWindowViewModel/>
