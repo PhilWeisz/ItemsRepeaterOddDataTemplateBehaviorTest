@@ -28,6 +28,6 @@
     </ItemsRepeater>
   </ScrollViewer>
 
-    <Button Background="Purple" Command="{Binding LaunchDialogCommand}" CommandParameter="False" >LOL</Button>
+    <Button Background="Purple" Command="{Binding LaunchDialogCommand}" CommandParameter="False" >OpenDialog</Button>
   </StackPanel>
 </UserControl>
