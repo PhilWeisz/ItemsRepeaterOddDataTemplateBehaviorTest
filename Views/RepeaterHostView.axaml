@@ -12,7 +12,8 @@
   <UserControl.DataContext>
     <vm:RepeaterHostViewModel/>
   </UserControl.DataContext>
-  
+  <StackPanel>
+
   <ScrollViewer>
     <ItemsRepeater ItemsSource="{Binding Items}">
       <ItemsRepeater.Layout>
@@ -21,10 +22,12 @@
       <ItemsRepeater.ItemTemplate>
         <DataTemplate x:DataType="vm:RepeaterElementViewModel">
           <!--<ContentControl x:Name="ContentControl" Content="{Binding}" />--><!-- works w/o Exception-->
-          <views:RepeaterElementView DataContext="{Binding}"/>                 <!-- doesn't -->
+          <views:RepeaterElementView />                 <!-- doesn't -->
         </DataTemplate>
       </ItemsRepeater.ItemTemplate>
     </ItemsRepeater>
   </ScrollViewer>
 
+    <Button Background="Purple" Command="{Binding LaunchDialogCommand}" CommandParameter="False" >LOL</Button>
+  </StackPanel>
 </UserControl>
